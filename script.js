@@ -1,7 +1,7 @@
 /* =========================================================
    CONFIGURAÇÃO GERAL
    ========================================================= */
-const WHATSAPP_NUMBER = '5511999999999'; // Troque pelo número que receberá os pedidos
+const WHATSAPP_NUMBER = '5562992789896'; // Troque pelo número que receberá os pedidos
 
 /* =========================================================
    BASE DE PRODUTOS
