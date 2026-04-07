@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maik Samed — Produtos Naturais</title>
+  <meta name="description" content="Loja elegante de produtos naturais com catálogo interativo, carrinho e finalização por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fundo decorativo -->
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+
+    <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#topo" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Maik Samed</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#catalogo">Produtos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+        <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrinho">
+          <span>Carrinho</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#beneficios">Benefícios</a>
+      <a href="#catalogo">Produtos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </header>
+
+  
+  <!-- Conteúdo principal -->
+  <main id="topo">
+        <!-- Hero / destaque inicial -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Bem-estar natural, seleção premium</span>
+          <h1>Suplementos naturais para uma rotina com mais equilíbrio.</h1>
+          <p>
+            Aqui você encontra cápsulas, extratos e fórmulas naturais selecionadas para acompanhar o seu dia com mais leveza, cuidado e qualidade.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-primary">Comprar agora</a>
+            <a href="#beneficios" class="btn btn-secondary">Conhecer benefícios</a>
+          </div>
+
+          <div class="hero-highlights">
+            <div>
+              <strong>Ingredientes selecionados</strong>
+              <span>Produtos escolhidos com foco em qualidade, rotina e bem-estar.</span>
+            </div>
+            <div>
+              <strong>Compra prática</strong>
+              <span>Monte seu pedido e finalize pelo WhatsApp com atendimento direto.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-stage" id="heroStage">
+            <article class="floating-card floating-card-main">
+              <div class="floating-media bottle bottle-large">
+                <span class="bottle-cap"></span>
+                <span class="bottle-label"></span>
+              </div>
+            </article>
+
+            <article class="floating-card floating-card-side floating-card-top">
+              <div class="capsule-orbit">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mini-copy">
+                <small>Formulações versáteis</small>
+                <strong>Cápsulas e extratos para diferentes momentos da rotina</strong>
+              </div>
+            </article>
+
+            <article class="floating-card floating-card-side floating-card-bottom">
+              <div class="stat-pill">
+                <strong>24h</strong>
+                <span>para atendimento e confirmação do pedido</span>
+              </div>
+              <div class="floating-line"></div>
+              <p>Escolha seus produtos, ajuste as quantidades e envie tudo direto para nosso atendimento.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Benefícios -->
+    <section class="benefits-section" id="beneficios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Por que nos escolher</span>
+          <h2>Cuidado natural com apresentação elegante e experiência simples.</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="benefit-icon">01</div>
+            <h3>Seleção cuidadosa</h3>
+            <p>Produtos escolhidos para compor uma rotina mais equilibrada, prática e alinhada ao bem-estar.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon">02</div>
+            <h3>Navegação leve</h3>
+            <p>Uma experiência fluida para explorar categorias, descobrir fórmulas e comprar com tranquilidade.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon">03</div>
+            <h3>Pedido facilitado</h3>
+            <p>Adicione ao carrinho, ajuste as quantidades e envie seu pedido pelo WhatsApp em poucos passos.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-icon">04</div>
+            <h3>Atendimento próximo</h3>
+            <p>Suporte direto para combinar pagamento, entrega e tirar dúvidas sobre a sua seleção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Curadoria / vitrine institucional -->
+    <section class="showcase-section">
+      <div class="container showcase-grid">
+        <div class="showcase-copy reveal">
+          <span class="eyebrow">Curadoria</span>
+          <h2>Produtos naturais que unem funcionalidade e praticidade.</h2>
+          <p>
+            Nossa curadoria reúne opções para diferentes objetivos do dia a dia, com uma apresentação clean e elegante que valoriza cada produto.
+          </p>
+          <ul class="showcase-list">
+            <li>Fórmulas para rotina, equilíbrio e vitalidade</li>
+            <li>Busca rápida por categoria e nome do produto</li>
+            <li>Compra simples com fechamento direto no WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="showcase-panel reveal">
+          <div class="showcase-card showcase-card-large product-tilt">
+            <div class="showcase-text">
+              <small>Linha funcional</small>
+              <h3>Cápsulas e extratos naturais para uma rotina com mais intenção.</h3>
+            </div>
+            <div class="tea-pack"></div>
+          </div>
+          <div class="showcase-card-row">
+            <div class="showcase-card product-tilt">
+              <small>Qualidade</small>
+              <strong>Seleção natural</strong>
+            </div>
+            <div class="showcase-card product-tilt">
+              <small>Atendimento</small>
+              <strong>Pedido direto e rápido</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Catálogo -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="catalog-top reveal">
+          <div>
+            <span class="eyebrow">Catálogo</span>
+            <h2>Escolha os produtos ideais para o seu dia.</h2>
+          </div>
+          <p>
+            Explore nossa seleção por categoria, compare opções e adicione ao carrinho para enviar seu pedido de forma rápida.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar reveal">
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar produto..." />
+          </div>
+          <div class="filter-pills" id="filterPills"></div>
+        </div>
+
+        <div class="catalog-shell reveal">
+          <div class="catalog-shell-head">
+            <div>
+              <strong>Vitrine de produtos</strong>
+              <p>Seleção exclusiva de produtos para sua saúde e bem-estar</p>
+            </div>
+            <span class="catalog-shell-badge">11 itens disponíveis </span>
+          </div>
+          <div class="products-scroll">
+            <div class="products-grid" id="productsGrid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Depoimentos -->
+    <section class="testimonial-section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <span class="eyebrow">Quem compra, recomenda</span>
+          <h2>Uma experiência elogiada pela leveza, praticidade e cuidado.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p>“Gostei muito da facilidade para escolher os produtos e fechar tudo pelo WhatsApp. O atendimento foi rápido e atencioso.”</p>
+            <strong>Marina Costa</strong>
+            <span>Cliente recorrente</span>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>“O site passa confiança, é bonito e muito simples de usar. Em poucos minutos consegui montar meu pedido.”</p>
+            <strong>Renato Alves</strong>
+            <span>Comprador online</span>
+          </article>
+          <article class="testimonial-card reveal">
+            <p>“A seleção é excelente e a apresentação dos produtos deixa tudo mais claro. A experiência ficou elegante do começo ao fim.”</p>
+            <strong>Ana Beatriz</strong>
+            <span>Consumidora wellness</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Informações rápidas para comprar com mais tranquilidade.</h2>
+          <p>
+            Selecione seus produtos, monte o carrinho e envie o pedido pelo WhatsApp. Nossa equipe retorna para confirmar pagamento, entrega e demais detalhes.
+          </p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details open>
+            <summary>Como faço meu pedido?</summary>
+            <p>Adicione os produtos ao carrinho, clique em finalizar via WhatsApp e envie a mensagem automática com sua seleção.</p>
+          </details>
+          <details>
+            <summary>Como são definidos pagamento e entrega?</summary>
+            <p>Após o envio do pedido pelo WhatsApp, nossa equipe combina com você a forma de pagamento, prazo e modalidade de entrega.</p>
+          </details>
+          <details>
+            <summary>Posso tirar dúvidas antes de finalizar?</summary>
+            <p>Sim. Você pode entrar em contato pelo WhatsApp para consultar disponibilidade, combinações, valores e informações adicionais sobre os produtos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <!-- Carrinho lateral -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <small>Seu pedido</small>
+        <h3>Carrinho</h3>
+      </div>
+      <button class="icon-btn close-cart" id="closeCartBtn" aria-label="Fechar carrinho">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <strong>Seu carrinho está vazio.</strong>
+        <p>Adicione produtos para montar o pedido.</p>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary-row muted">
+        <span>Entrega e pagamento</span>
+        <span>Definidos no WhatsApp</span>
+      </div>
+      <button class="btn btn-whatsapp" id="checkoutWhatsAppBtn">Finalizar via WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  
+  <!-- Modal / página de detalhes do produto -->
+  <section class="product-detail-page" id="productDetailPage" aria-hidden="true">
+    <div class="container product-detail-inner">
+      <div class="product-detail-shell">
+        <div class="product-detail-topbar">
+          <button class="btn btn-secondary detail-back-btn" id="detailBackBtn">← Voltar para os produtos</button>
+          <button class="detail-close-btn" id="detailCloseBtn" aria-label="Fechar página do produto">×</button>
+        </div>
+
+        <div class="product-detail-grid" id="productDetailContent"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#topo" class="brand footer-brand">
+          <span class="brand-mark"></span>
+          <span class="brand-text">Maik Samed</span>
+        </a>
+        <p>Produtos naturais selecionados para uma rotina com mais equilíbrio, praticidade e bem-estar.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#catalogo">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
