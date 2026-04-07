@@ -1116,4 +1116,23 @@ function init() {
 /* =========================================================
    START
    ========================================================= */
+/* =========================================================
+   RESET DE SCROLL AO RECARREGAR A PÁGINA
+   ========================================================= */
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('load', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'auto'
+  });
+});
+
 init();
