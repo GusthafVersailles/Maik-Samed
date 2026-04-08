@@ -1123,16 +1123,30 @@ if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-window.addEventListener('beforeunload', () => {
+function forcePageTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
   window.scrollTo(0, 0);
-});
+}
 
 window.addEventListener('load', () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'auto'
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
+  forcePageTop();
+
+  requestAnimationFrame(() => {
+    forcePageTop();
+
+    setTimeout(() => {
+      forcePageTop();
+    }, 50);
   });
+});
+
+window.addEventListener('pageshow', () => {
+  forcePageTop();
 });
 
 init();
